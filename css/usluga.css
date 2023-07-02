@@ -132,6 +132,7 @@ table {
     border-spacing: 0;
 }
 
+
 @font-face {
     font-family: "GilroyRegular";
     src: url("../fonts/GilroyRegular.ttf");
@@ -275,7 +276,10 @@ video {
 .about-block,
 .cools-block,
 .uslugi-row,
-.marks-row {
+.marks-row,
+.team-block,
+.otz-block,
+.form-block {
     padding-top: 100px;
     display: flex;
     padding-bottom: 80px;
@@ -617,10 +621,12 @@ h1 {
     height: 300px;
     padding-top: 93px;
 }
-.footer-flex{
+
+.footer-flex {
     display: flex;
     justify-content: space-between;
 }
+
 .copyright {
     font-family: 'FedraSansProNormal';
     font-style: normal;
@@ -630,15 +636,20 @@ h1 {
     padding-top: 28px;
     color: #000000;
 }
-.footer-wrapper{
+
+.footer-wrapper {
     margin: 0 auto;
     max-width: 1200px;
 }
-.footer-center{
+
+.footer-center {
     display: flex;
 
 }
-.center-text,.right-text, .right-text1{
+
+.center-text,
+.right-text,
+.right-text1 {
     font-family: 'FedraSansProNormal';
     font-style: normal;
     font-weight: 400;
@@ -647,17 +658,132 @@ h1 {
     padding-top: 28px;
     color: #000000;
 }
-.right-flex1{
-   display: flex;
-   justify-content: space-between;
+
+.right-flex1 {
+    display: flex;
+    justify-content: space-between;
 }
-.right-text1{
- margin-right: 29px;
+
+.right-text1 {
+    margin-right: 29px;
 }
-.socials{
-padding-top: 24px;
-padding-left: 220px;
+
+.socials {
+    padding-top: 24px;
+    padding-left: 220px;
 }
+
+.video-text {
+    font-family: 'FedraSansProBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    /* identical to box height */
+    position: absolute;
+    z-index: 99;
+    left: 21%;
+    top: 50px;
+    color: #ffffff;
+}
+
+.team-img {
+    padding-top: 45px;
+}
+
+.otz-name {
+    font-family: 'FedraSansProBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    padding-bottom: 24px;
+
+    color: #000000;
+}
+
+.otz-desc {
+    font-family: 'FedraSansProNormal';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.otz-img {
+    padding-right: 45px;
+}
+
+.otz-card {
+    padding-top: 48px;
+    padding-left: 50px;
+    width: 836px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.input3,
+.input {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 382px;
+    height: 60px;
+}
+
+.form {
+    padding-top: 40px;
+}
+
+.input3 {
+    margin-right: 82px;
+}
+
+.input1 {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin-top: 40px;
+    width: 856px;
+    height: 200px;
+}
+
+input::placeholder {
+    font-family: 'FedraSansProNormal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    padding-left: 56px;
+
+    color: #000000;
+}
+
+.send {
+    border: none;
+    background: #FF0329;
+    width: 200px;
+    height: 53px;
+    font-family: 'FedraSansProBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.send-cont {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+
 .auth {
     background: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -1113,28 +1239,6 @@ a:hover {
     color: #FF0329;
     transition: all 0.5s ;
 }
-.cools-button:hover,.cools-button:hover,.card-button:hover,.card-button-big:hover{
-    background: #000000;
-    cursor: pointer;
-    transition: all 0.5s ;
-}
-.cools-button:active,.cools-button:active,.card-button:active,.card-button-big:active{
-    background: #FF6401;
-    cursor: pointer;
-    transition: all 0.5s ;
-}
-.sayavka-button:hover{
-    color: #ffffff;
-    background: #FF0329;
-    transition: all 0.5s ;
-    cursor: pointer;
-}
-.sayavka-button:active{
-    color: #ffffff;
-    background: #000000;
-    transition: all 0.5s ;
-    cursor: pointer;
-}
 .x,
 .x2,.x3 {
     margin-left: 500px;
@@ -1149,5 +1253,8 @@ a:hover {
     border: 1px solid #FF0329;
 }
 form{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
